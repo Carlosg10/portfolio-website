@@ -5,11 +5,13 @@
   }
 
   /* Navigation */
-  
+  nav-bar {
+    display: inline-block;
+  }
 
 
   /* Body */
 
   body {
-    background-image: url("/img/body-image1.jpg")
+    background-image: url("/img/body-image1.jpg");
   }
