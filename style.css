@@ -45,4 +45,36 @@
     font-size: 2rem;
     color: #aaa;
   }
+
+  /* Media queries for home page */
+
+  @media(min-width: 1200px) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  @media(max-width: 800px) {
+    .container {
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media(max-width: 500px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Cursor for Typewriter */
+
+  .txt-type > .txt {
+    border-right: 0.2rem solid #777;
+  }
   
