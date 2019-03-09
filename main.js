@@ -10,9 +10,45 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
 
 // Type Method 
 TypeWriter.prototype.type = function() {
-    console.log('Hello');
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
 
-    setTimeout((() => this.type(), 500)
+    // Check if deleting
+    if(this.isDeleting) {
+       // Remove char
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+       // Add char
+       this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+    
+    // Insert txt into element
+    this.txtElement.innerHTML = '<span class="txt">${this.txt}</span>';
+
+    // Initial Type Speed
+    let typeSpeed = 300;
+
+    if(this.isDeleting) {
+        typeSpeed /= 2; 
+    }
+
+    // If word is complete
+    if(!this.isDeleting && this.txt === fullTxt) {
+        // Make pause at end
+        typeSpeed = this.wait;
+        // Set delete to true
+        this.isDeleting = true;
+    } else if(this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        // Move to next word
+        this.wordIndex++;
+        // Pause before stop typing
+        typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed)
 }
 // Initialize when DOM loads 
 document.addEventListener('DOMContentLoaded', init);
