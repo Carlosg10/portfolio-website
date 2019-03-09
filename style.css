@@ -1,4 +1,5 @@
 /* Base Styles -------------------- */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 * {
     box-sizing: border-box;
@@ -13,6 +14,12 @@
   /* Body */
 
   body {
+       font-family: 'Playfair Display', serif;
+       height: 100vh;
+       background: #333 url("/img/body-image1.jpg") no-repeat center center / cover;
+       color: #ccc;
+       overflow: hidden;
+
     /* background-image: url("/img/body-image1.jpg"); */
     /*background-size: cover; */
   }
