@@ -35,6 +35,17 @@
     color: #fff;
   }
 
+  .row {
+    float: right;
+    list-style: none;
+    
+    }
+  
+  .row li {
+    display: inline-block;
+    margin-left: 40px; 
+  }
+
   /* Media queries for home page */
 
   @media(min-width: 1200px) {
