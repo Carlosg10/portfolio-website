@@ -1,15 +1,6 @@
 /* Base Styles -------------------- */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-* {
-    box-sizing: border-box;
-  }
-
-  /* Navigation */
-  nav-bar li {
-    display: inline-block;
-  }
-
 
   /* Body */
 
@@ -19,9 +10,6 @@
        background: #333 url("/img/body-image1.jpg") no-repeat center center / cover;
        color: #fff;
        overflow: hidden;
-
-    /* background-image: url("/img/body-image1.jpg"); */
-    /*background-size: cover; */
   }
 
   .container {
@@ -43,7 +31,7 @@
 
   h2 {
     font-size: 2rem;
-    color: #aaa;
+    color: #fff;
   }
 
   /* Media queries for home page */
