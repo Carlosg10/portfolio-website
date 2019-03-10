@@ -25,7 +25,7 @@ TypeWriter.prototype.type = function() {
     }
     
     // Insert txt into element
-    this.txtElement.innerHTML = '<span class="txt">${this.txt}</span>';
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`; 
 
     // Initial Type Speed
     let typeSpeed = 300;
@@ -48,7 +48,7 @@ TypeWriter.prototype.type = function() {
         typeSpeed = 500;
     }
 
-    setTimeout(() => this.type(), typeSpeed)
+    setTimeout(() => this.type(), 500)
 }
 // Initialize when DOM loads 
 document.addEventListener('DOMContentLoaded', init);
