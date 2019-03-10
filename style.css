@@ -38,12 +38,24 @@
   .row {
     float: right;
     list-style: none;
+    margin-top: 40px;
+    margin-right: 80px; 
     
     }
   
   .row li {
     display: inline-block;
     margin-left: 40px; 
+    text-transform: uppercase;
+    font-size: 19px; 
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0px;
+  }
+
+  .row li:hover,
+  .row li:active {
+    border-bottom: 2px solid #48a8ce;
   }
 
   /* Media queries for home page */
