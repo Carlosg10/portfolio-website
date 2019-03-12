@@ -31,6 +31,8 @@ h2 {
   color: #fff;
 }
 
+
+/* Navigation Styles */
 .row {
   float: right;
   list-style: none;
@@ -83,4 +85,10 @@ h2 {
 /* Cursor for Typewriter */
 .txt-type>.txt {
   border-right: 0.2rem solid #777;
+}
+
+/* Aspirations Section */
+#aspirations {
+  padding-top: 130px;
+  
 }
