@@ -89,11 +89,11 @@ h2 {
 
 /* Aspirations Section */
 #aspirations {
-  padding-top: 130px;
+  /* padding-top: 130px;
   }
 
   .section-head {
-     padding-left: 520px;
+    /* padding-left: 520px;
   }
 
   .text1 {
@@ -103,5 +103,5 @@ h2 {
 
   .btn-aspirations {
     text-align: center;
-    
+
   }
