@@ -90,5 +90,18 @@ h2 {
 /* Aspirations Section */
 #aspirations {
   padding-top: 130px;
-  
-}
+  }
+
+  .section-head {
+     padding-left: 520px;
+  }
+
+  .text1 {
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .btn-aspirations {
+    text-align: center;
+    
+  }
