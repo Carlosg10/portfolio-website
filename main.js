@@ -8,7 +8,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
     this.isDeleting = false;
 }
 
-// Type Method 
+// Type Method
 TypeWriter.prototype.type = function() {
     // Current index of word
     const current = this.wordIndex % this.words.length;
@@ -23,15 +23,15 @@ TypeWriter.prototype.type = function() {
        // Add char
        this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-    
+
     // Insert txt into element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`; 
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
     // Initial Type Speed
     let typeSpeed = 300;
 
     if(this.isDeleting) {
-        typeSpeed /= 2; 
+        typeSpeed /= 2;
     }
 
     // If word is complete
@@ -50,7 +50,7 @@ TypeWriter.prototype.type = function() {
 
     setTimeout(() => this.type(), 500)
 }
-// Initialize when DOM loads 
+// Initialize when DOM loads
 document.addEventListener('DOMContentLoaded', init);
 
 // Initialize App
@@ -61,3 +61,5 @@ function init() {
 // Initialize Typewriter
 new TypeWriter(txtElement, words, wait);
 }
+
+// Scrolling tabs with javascript 

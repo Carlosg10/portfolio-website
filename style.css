@@ -1,6 +1,12 @@
 /* Base Styles -------------------- */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Body */
 body {
   font-family: 'Playfair Display', serif;
@@ -14,7 +20,9 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  width: 100%;
   padding: 0 3rem;
+
 }
 
 h1, h2 {
@@ -82,26 +90,15 @@ h2 {
   }
 }
 
+
 /* Cursor for Typewriter */
 .txt-type>.txt {
   border-right: 0.2rem solid #777;
 }
 
 /* Aspirations Section */
-#aspirations {
-  /* padding-top: 130px;
-  }
 
-  .section-head {
-    /* padding-left: 520px;
-  }
-
-  .text1 {
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  .btn-aspirations {
-    text-align: center;
-
-  }
+.section-head {
+  padding-left: 500px;
+  padding-top: 0px;
+}
