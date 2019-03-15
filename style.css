@@ -62,6 +62,7 @@ h2 {
 .row li:active {
   border-bottom: 2px solid #48a8ce;
 }
+/* ---------------------------------*/
 
 /* Media queries for home page */
 @media(min-width: 1200px) {
@@ -89,16 +90,20 @@ h2 {
     font-size: 1.5rem;
   }
 }
-
+/* -----------------------------*/
 
 /* Cursor for Typewriter */
 .txt-type>.txt {
   border-right: 0.2rem solid #777;
 }
+/*------------------------------*/
+
 
 /* Aspirations Section */
-
-.section-head {
+.aspiration-section {
+  height: 100vh;
+}
+/* .section-head {
   padding-left: 500px;
   padding-top: 0px;
-}
+} */
